@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                     <img id="logo-img" src="Logo.png" alt="Logo PEMIRA" />
+                    <span>PEMIRA 2025</span>
+                </div>
+                <div class="menu">
+                    <a href="SistemInformasi.html" class="jurusan-btn">Sistem Informasi</a>
+                    <a href="TeknologiInformasi.html" class="jurusan-btn">Teknologi Informasi</a>
+                    <a href="Pariwisata.html" class="jurusan-btn">Pariwisata</a>
+                    <a href="Manajemen.html" class="jurusan-btn">Manajemen</a>
+                    <a href="Akuntansi.html" class="jurusan-btn">Akuntansi</a>
+                    <a href="BioKewirausahaan.html" class="jurusan-btn">BioKewirausahaan</a>
+                    <a href="Vokasi.html" class="jurusan-btn">Vokasi</a>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="running-text-container">
+        <div class="running-text">
+            <span>PEMILIHAN KETUA & WAKIL KETUA HIMA VOKASI</span>
+            <span>PEMILIHAN KETUA & WAKIL KETUA HIMA VOKASI</span>
+            <span>PEMILIHAN KETUA & WAKIL KETUA HIMA VOKASI</span>   
+        </div>
+    </div> 
+    <!-- Main Content -->
+    <main class="main">
+        <div class="section">
+            <div class="text-center">
+                <h1>PEMILIHAN KETUA & WAKIL KETUA HIMA VOKASI</h1>
+            </div>
+            
+            <div class="cards">
+                <!-- Paslon 1 -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="No urut 01_Muhammad Rizky Pratama Putra _Vina Auliana .png" alt="#">
+                        </div>
+                        <h2>Paslon 1</h2>
+                        <p>Muhammad Rizky Pratama Putra & Vina Auliana</p>
+                        
+                        <div class="vote-section">
+                            <div class="vote-row">
+                                <span>Suara Sah:</span>
+                                <div class="counter-group">
+                                    <button onclick="updateCount('paslon1-sah', -1)">-</button>
+                                    <span id="paslon1-sah" class="counter">0</span>
+                                    <button onclick="updateCount('paslon1-sah', 1)">+</button>
+                                </div>
+                            </div>
+                            <div class="vote-row">
+                                <span>Suara Tidak Sah:</span>
+                                <div class="counter-group">
+                                    <button onclick="updateCount('paslon1-tidak-sah', -1)">-</button>
+                                    <span id="paslon1-tidak-sah" class="counter">0</span>
+                                    <button onclick="updateCount('paslon1-tidak-sah', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="total-box">
+                            <div class="total-row">
+                                <span>Total Suara:</span>
+                                <span id="paslon1-total">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paslon 2 -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="No. Urut 2_Muhammad Rifa Julian Akbar_Vanessa Graciella Stefanie Santoso.png" alt="#">
+                        </div>
+                        <h2>Paslon 2</h2>
+                        <p>Muhammad Rifa Julian Akbar & Vanessa Graciella Stefanie Santoso</p>
+                        
+                        <div class="vote-section">
+                            <div class="vote-row">
+                                <span>Suara Sah:</span>
+                                <div class="counter-group">
+                                    <button onclick="updateCount('paslon2-sah', -1)">-</button>
+                                    <span id="paslon2-sah" class="counter">0</span>
+                                    <button onclick="updateCount('paslon2-sah', 1)">+</button>
+                                </div>
+                            </div>
+                            <div class="vote-row">
+                                <span>Suara Tidak Sah:</span>
+                                <div class="counter-group">
+                                    <button onclick="updateCount('paslon2-tidak-sah', -1)">-</button>
+                                    <span id="paslon2-tidak-sah" class="counter">0</span>
+                                    <button onclick="updateCount('paslon2-tidak-sah', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="total-box">
+                            <div class="total-row">
+                                <span>Total Suara:</span>
+                                <span id="paslon2-total">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paslon 3 -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="No urut 03_ABID FADHILAH ISNADA_MEILANI AMELIA PUTRI.png" alt="#">
+                        </div>
+                        <h2>Paslon 3</h2>
+                        <p>Abid Fadhilah Isnada & Meilani Amelia Putri</p>
+                        
+                        <div class="vote-section">
+                            <div class="vote-row">
+                                <span>Suara Sah:</span>
+                                <div class="counter-group">
+                                    <button onclick="updateCount('paslon3-sah', -1)">-</button>
+                                    <span id="paslon3-sah" class="counter">0</span>
+                                    <button onclick="updateCount('paslon3-sah', 1)">+</button>
+                                </div>
+                            </div>
+                            <div class="vote-row">
+                                <span>Suara Tidak Sah:</span>
+                                <div class="counter-group">
+                                    <button onclick="updateCount('paslon3-tidak-sah', -1)">-</button>
+                                    <span id="paslon3-tidak-sah" class="counter">0</span>
+                                    <button onclick="updateCount('paslon3-tidak-sah', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="total-box">
+                            <div class="total-row">
+                                <span>Total Suara:</span>
+                                <span id="paslon3-total">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Total Keseluruhan -->
+            <div class="rekap">
+                <h2>TOTAL SUARA</h2>
+                <div class="rekap-grid">
+                    <div class="rekap-box total-sah">
+                        <p>Total Suara Sah</p>
+                        <p id="total-sah">0</p>
+                    </div>
+                    <div class="rekap-box total-tidak-sah">
+                        <p>Total Suara Tidak Sah</p>
+                        <p id="total-tidak-sah">0</p>
+                    </div>
+                    <div class="rekap-box total-keseluruhan">
+                        <p>Total Keseluruhan</p>
+                        <p id="total-keseluruhan">0</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="save-wrapper">
+                <button id="saveBtn">Save Suara</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="logo-footer">
+                <img src="Logo Himasifo.png" alt="Logo Himpunan Mahasiswa" />
+            </a>
+            <div class="social">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+                </a>
+                <span>@himasifo.ibik</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
