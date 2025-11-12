@@ -131,12 +131,12 @@
 
     .footer-content {
         display: flex;
-        flex-direction: column; /* susun ke bawah */
+        flex-direction: column; 
         align-items: center;
         gap: 12px;
     }
 
-    /* Logo Hima */
+    
     .logo-footer img {
         height: 80px;
         transition: transform 0.3s ease, filter 0.3s ease;
@@ -146,10 +146,10 @@
         filter: drop-shadow(0 0 10px #00eaff);
     }
 
-    /* Social */
+    
     .social {
         display: flex;
-        flex-direction: column; /* biar IG & text ke bawah */
+        flex-direction: column; 
         align-items: center;
         gap: 6px;
     }
@@ -176,7 +176,7 @@
     .running-text-container {
     width: 100%;
     overflow: hidden;
-    background: #16302B; /* sama kaya navbar biar nyatu */
+    background: #16302B; 
     padding: 6px 0;
     }
 
@@ -188,8 +188,8 @@
 
     .running-text span {
     display: inline-block;
-    padding-right: 100px; /* jarak antar teks */
-    color: #A38560;       /* warna tulisan */
+    padding-right: 100px; 
+    color: #A38560;       
     font-size: 1rem;
     font-weight: bold;
     }
@@ -202,5 +202,128 @@
         transform: translateX(-100%);
     }
     }
+@media (max-width: 992px) {
+  .navbar-content {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .img-wrapper img {
+    height: 400px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .text-center h1 {
+    font-size: 1.4rem;
+  }
+
+  .text-center p {
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .img-wrapper img {
+    height: 320px;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .vote-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .counter-group {
+    margin-top: 5px;
+  }
+
+  .rekap-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .footer {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .logo-footer img {
+    height: 60px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  body.body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .img-wrapper img {
+    height: 300px;
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .social span {
+    font-size: 13px;
+  }
+
+  .running-text span {
+    font-size: 0.9rem;
+  }
+}
+
 
 
